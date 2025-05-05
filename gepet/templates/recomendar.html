@@ -1,0 +1,11 @@
+<h1>🎥 Recomendações de {{ genero|capitalize }}</h1>
+{% if filmes %}
+    <ul>
+    {% for filme in filmes %}
+    <li>{{ filme }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Gênero inválido ou não informado.</p>
+{% endif %}
+<a href="/">Voltar</a>

@@ -1,0 +1,11 @@
+{%extends "base.html" %}
+{%block title%}Suas recomendações{% endblock %}
+
+{% block content %}
+<h1> Recomendações de {{ genero }}</h1>
+<ul>
+    {% for film in filmes %}
+    <p>{{film}}</p>
+    {% endfor %}
+</ul>
+{% endblock %}

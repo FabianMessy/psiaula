@@ -1,0 +1,20 @@
+{%extends "base.html" %}
+{%block title%}Pagina de Cadastro{% endblock %}
+
+{% block content %}
+<form method="post">
+    <p>Nome:</p>
+    <p><input type="text" name="nm"></p>
+    <select name="genero">
+        <option value="acao">Ação</option>
+        <option value="comedia">Comédia</option>
+        <option value="drama">Drama</option>
+        <option value="ficcao">Ficção</option>
+        <option value="terror">Terror</option>
+    </select>
+    <br>
+    Receber notificações por e-mail?
+    <input type="checkbox" name="notificacoes"><br>
+    <p><input type="submit" value="enviar"></p>
+</form>
+{% endblock %}
